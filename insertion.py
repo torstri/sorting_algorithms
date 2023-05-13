@@ -1,6 +1,3 @@
-
-import list_generater
-
 def switch(i, j, list):
     copy = list[i]
     list[i] = list[j]
