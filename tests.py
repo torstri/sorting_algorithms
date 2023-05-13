@@ -1,7 +1,7 @@
 
 
 import list_generater
-from algorithms import selection
+import insertion
 import sys
 
 def create_tests():
@@ -13,17 +13,17 @@ def create_tests():
     for key in lists["ascending"]:
         l = lists["ascending"].get(key)
         sorted_list = sorted(l)
-        assert selection.sort_algorithm(l) == sorted_list, "Ascending"
+        assert insertion.sort_algorithm(l) == sorted_list, "Ascending"
         
     for key in lists["descending"]:
         l = lists["descending"].get(key)
         sorted_list = sorted(l)
-        assert selection.sort_algorithm(l) == sorted_list, "Descending"
+        assert insertion.sort_algorithm(l) == sorted_list, "Descending"
         
     for key in lists["random"]:
         l = lists["random"].get(key)
         sorted_list = sorted(l)
-        assert selection.sort_algorithm(l) == sorted_list, "Random failed"
+        assert insertion.sort_algorithm(l) == sorted_list, "Random failed"
     
     
     print("Everything passed")
