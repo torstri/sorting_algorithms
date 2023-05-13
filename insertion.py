@@ -11,7 +11,6 @@ def sort_algorithm(l):
     length = len(l)
     list = l.copy()
     i = 0
-    sorted_length = 1
     
     while i < length - 1:
         j = i + 1
@@ -24,6 +23,5 @@ def sort_algorithm(l):
                 m = k
                 k -= 1
         
-        sorted_length += 1
         i += 1
     return list
