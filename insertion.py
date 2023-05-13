@@ -13,7 +13,7 @@ def sort_algorithm(l):
     i = 0
     sorted_length = 1
     
-    while sorted_length < length:
+    while i < length - 1:
         j = i + 1
         k = i
         m = j
